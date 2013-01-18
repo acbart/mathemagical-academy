@@ -1,0 +1,3 @@
+Spyral Changes
+    - fixed error in sprite (setting group didn't change sprite._group)
+    - Added functionality to ButtonWidget

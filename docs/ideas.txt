@@ -1,0 +1,11 @@
+Mathemagical Academy
+
+Navigate school
+	Changes everyday ("You didn't expect a magic school to stay the same all the time, did you?")
+Fill up cauldron
+Caring for magical creatures
+
+Minigame mode
+Select house
+
+List all the anagrams for a word (gives definitions)
