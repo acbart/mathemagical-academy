@@ -1,11 +1,42 @@
 Mathemagical Academy
-
-Navigate school
-	Changes everyday ("You didn't expect a magic school to stay the same all the time, did you?")
-Fill up cauldron
-Caring for magical creatures
-
-Minigame mode
-Select house
-
-List all the anagrams for a word (gives definitions)
+    You can either play story mode or play minigames directly.
+    
+    Storyline:
+        * You are a new student at the Mathemagical Academy. 
+        * Goal is to get points to win the school competition
+        
+    Minigames:
+        Castle Exploration:
+            * Similar to the original, you explore the castle by following instructions to move from coordinate to coordinate. 
+            * You click on a tile, and you move there (quickly). 
+            * If you go off the path outlined by the instructions, you run the risk of hitting Bad Stuff
+                - having a ghost scare you
+                - floor giving out (warps you back to the start)
+                - walls apearing in front of you
+                - teacher appearing and subtracting house points
+            * Castle is randomly generated (I'm actually doing it this time)
+        Potions: 
+            * Similar to the original, you are brewing potions by following a recipe
+            * You use N ingredients per potion (N > 1) (starts at 2 or 3, and increases with difficulty)
+            * You are given the fractional quantity needed for the first n-1 ingredients, and the total amount needed (starts at 1, but increases with difficulty).
+            * You must convert each fractional amount to decimal, fill in the missing decimal amount, and and then hit brew.
+            * As you fill in decimal numbers, the sum is shown at the bottom, and cauldrons fill up (multiple cualdrons if the total amount is >1)
+        Herbology:
+            * Growing and shrinking plants with magic
+            * You have a target height for a given plant, and you can multiply it or divide it with fractions.
+            * Visually watch it grow
+        Care of Magical Creatures:
+            * Card-based game where you try and tame creatures
+            * Your hand has five cards; the creature will play one, and you have a few seconds to play your own
+            * The cards have fractions on them; whoever plays the higher fraction wins the hand
+            * As you win more hands, you tame the creatures. But they'll wear you down if you don't win enough
+            * Some cards have special effects (restoring energy)
+            * Monsters that are tamed can be used in the Flying minigame
+        Flying:
+            * Flying == Math Adder + Space Recycler
+            * You have a target goal in the lower-right, and you pick up numbers and operators to reach that goal
+            * You start off with a broom (average speed and acceleration), but can use creatures with better stats and abilities)
+                * Hippogriffs - can blow numbers away
+                * Dragon - firebreath doubles numbers
+                * Pegasus - Increases odds of better numbers
+                * Phoenix - can make short teleportations
