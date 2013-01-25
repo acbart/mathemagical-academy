@@ -6,7 +6,7 @@ Mathemagical Academy
         * Goal is to get points to win the school competition
         
     Minigames:
-        Castle Exploration:
+        Castle Exploration: Coordinate Grid
             * Similar to the original, you explore the castle by following instructions to move from coordinate to coordinate. 
             * You click on a tile, and you move there (quickly). 
             * If you go off the path outlined by the instructions, you run the risk of hitting Bad Stuff
@@ -15,24 +15,29 @@ Mathemagical Academy
                 - walls apearing in front of you
                 - teacher appearing and subtracting house points
             * Castle is randomly generated (I'm actually doing it this time)
-        Potions: 
+        Potions: Converting Fractions, Find Missing Value Fractions (+/- fractions)
             * Similar to the original, you are brewing potions by following a recipe
             * You use N ingredients per potion (N > 1) (starts at 2 or 3, and increases with difficulty)
             * You are given the fractional quantity needed for the first n-1 ingredients, and the total amount needed (starts at 1, but increases with difficulty).
             * You must convert each fractional amount to decimal, fill in the missing decimal amount, and and then hit brew.
             * As you fill in decimal numbers, the sum is shown at the bottom, and cauldrons fill up (multiple cualdrons if the total amount is >1)
-        Herbology:
+        Herbology: Multiplying and dividing fractions
             * Growing and shrinking plants with magic
             * You have a target height for a given plant, and you can multiply it or divide it with fractions.
             * Visually watch it grow
-        Care of Magical Creatures:
+        Care of Magical Creatures: Reducing Fractions
+            * Need to find the equivalent fractional amount of food by fractional reduction
+            * Piles of food, each marked with a fractional amount
+            * Drag and drop to the monster (or click a button underneath them)
+            * Piles are visually sized
+        Creature Taming: Comparing fractions
             * Card-based game where you try and tame creatures
             * Your hand has five cards; the creature will play one, and you have a few seconds to play your own
             * The cards have fractions on them; whoever plays the higher fraction wins the hand
             * As you win more hands, you tame the creatures. But they'll wear you down if you don't win enough
             * Some cards have special effects (restoring energy)
             * Monsters that are tamed can be used in the Flying minigame
-        Flying:
+        Flying: +/- fractions
             * Flying == Math Adder + Space Recycler
             * You have a target goal in the lower-right, and you pick up numbers and operators to reach that goal
             * You start off with a broom (average speed and acceleration), but can use creatures with better stats and abilities)
@@ -40,3 +45,42 @@ Mathemagical Academy
                 * Dragon - firebreath doubles numbers
                 * Pegasus - Increases odds of better numbers
                 * Phoenix - can make short teleportations
+
+        Still want:
+            Reducing Fractions
+            Identifying equivalent fractions
+            Reducing composite numbers
+            
+            
+Storyline
+    - First day of classes
+    - Investigating evil professor
+    - Fighting sealed evil
+
+MapExplorer
+    20x20 grid of 32x32 tiles
+        - [Difficulty] Axes range can vary
+        - 
+SizeManipulator
+IngredientMixer
+CreatureTamer
+CreatureFeeder
+FlyingExplorer
+    Labeled objects fly onto the screen
+        - [Level] Spawning rects changeable
+        - [Difficulty] Fractional amounts vary
+        - [Feedback] Glowing outline around collectables!
+    Unlabeled objects fly in the background
+        - [FPS] you can change how many background objects appear, default automatically set based on OS
+    Can collect labeled objects to build a mathematical expression
+        - [Feedback] When you pick up an object, magic smoke appears
+        - [Feedback] When the expression is valid, an icon will appear
+        - [Feedback] Flash "Press [ENTER] to collapse the expression!"
+    Your character can be moved with Arrow Keys
+        - [Graphical] Rotate character up and down a little as they move up and down
+        - [Feedback] If the player doesn't move at first, flash a picture demonstrating pressing the arrow keys
+
+
+You are a new student at the Mathemagical Academy
+On your first day you meet
+After your first day of classes
