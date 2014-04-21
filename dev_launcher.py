@@ -1,14 +1,14 @@
 ### CISC374 Test Launcher
 
 __author__ = "Robert Deaton"
-__version__ = "0.2"
+__version__ = "0.3"
 __license__ = "MIT"
 
 import gettext
 import sys
 import os
-sys.path.insert(0, os.path.abspath("libraries"))
-
+import libraries
+libraries.setup_path()
 from optparse import OptionParser
 import spyral
 try:
@@ -88,13 +88,15 @@ if __name__ == '__main__':
     
     if not options.profile:
         try:
-            spyral.director.init(options.res, fullscreen = options.fullscreen, max_fps = options.fps)
-            launch()
-            spyral.director.run()
-        except KeyboardInterrupt:
+            try:
+                spyral.director.init(options.res, fullscreen = options.fullscreen, max_fps = options.fps)
+                launch()
+                spyral.director.run()
+            except KeyboardInterrupt:
+                spyral.quit()
             spyral.quit()
-        spyral.quit()
-        sys.exit()
+        except spyral.exceptions.GameEndException:
+            sys.exit()
 
     # We now handle if profiling is enabled.
     import cProfile
@@ -123,7 +125,10 @@ if __name__ == '__main__':
         except KeyboardInterrupt:
             spyral.quit()
         files.append(output)
-    spyral.quit()
+    try:
+        spyral.quit()
+    except spyral.exceptions.GameEndException:
+        pass
         
     try:
         for file in files:

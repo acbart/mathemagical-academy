@@ -6,7 +6,7 @@
 	url = git://github.com/kennethreitz/envoy.git
 [submodule "libraries/sugargame2"]
 	path = libraries/sugargame2
-	url = https://github.com/platipy/sugargame2
+	url = https://github.com/platipy/sugargame2.git
 [submodule "libraries/spyral"]
 	path = libraries/spyral
 	url = https://github.com/platipy/spyral.git
