@@ -1,4 +1,4 @@
-from model import SIZE, MODEL, RESOURCES
+from model.model import SIZE, MODEL, RESOURCES
 from minigames import MiniGames
 import spyral
 

@@ -1,5 +1,8 @@
 import spyral
-import title
+from title import Title
+
+from model.model import load_resources
 
 def main():
-    spyral.director.push(title.Title())
+    load_resources()
+    spyral.director.push(Title())
